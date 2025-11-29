@@ -1,0 +1,40 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Sidebar hidden by default */
+    width: 300px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+}
+
+/* Show Sidebar */
+.sidebar.show {
+    right: 0;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    position: fixed;
+    top: 15%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 0 0 50%;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,159 @@
+/* Style untuk header */
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00ced1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-header .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.custom-header .header-left span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.custom-header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.custom-header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.custom-header nav a:hover {
+    color: #0077b6;
+}
+
+/* Style untuk dropdown */
+.user-info {
+    position: relative;
+}
+
+.user-info .user-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-info .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.user-info .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.user-info .dropdown-menu a:hover {
+    background-color: #f3f4f6;
+}
+
+/* Style untuk konten utama */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card-content {
+    padding: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom dengan lebar yang sama */
+    gap: 20px; /* Jarak antara kartu */
+    margin-bottom: 20px; /* Jarak antara setiap pasangan kartu */
+}
+
+.card {
+    width: 100%; /* Pastikan kartu memenuhi lebar kolom */
+}
+
+/* Responsif: Pada layar kecil, kartu ditumpuk secara vertikal */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
+    }
+}
